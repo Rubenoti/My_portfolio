@@ -5,7 +5,7 @@
   align-items: center;
   background-color: $background;
 
-  @include movile {
+  @include tablet {
     flex-direction: column;
     box-shadow: none;
     padding-bottom: 15px;
@@ -13,13 +13,13 @@
   &__title {
     font-weight: bold;
     margin: $navigation-margin;
-    @include movile {
+    @include tablet {
       border-bottom: 1px solid #ccc;
     }
   }
   &__list {
     display: flex;
-    @include movile {
+    @include tablet {
       flex-direction: column;
       align-items: center;
     }
@@ -28,7 +28,7 @@
       :hover {
         color: $paragraph-color;
       }
-      @include movile {
+      @include tablet {
         margin: 0;
       }
     }

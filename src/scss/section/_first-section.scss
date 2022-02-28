@@ -17,6 +17,11 @@
   p {
     font-size: $paragraph-size;
   }
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .leftContent {
     display: flex;
     flex-direction: column;
@@ -25,8 +30,12 @@
       margin-top: 7px;
       justify-content: center;
       &__item {
-        background-color: $background;
         margin-right: 4px;
+        height: 30px;
+        width: 30px;
+        img {
+          max-width: 100%;
+        }
       }
     }
   }
