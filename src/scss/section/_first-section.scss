@@ -1,0 +1,33 @@
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 40px;
+  h1 {
+    font-size: $title-size;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: $subtitlle-size;
+    color: rgb(179, 173, 173);
+  }
+  li {
+    font-size: $paragraph-size;
+  }
+  p {
+    font-size: $paragraph-size;
+  }
+  .leftContent {
+    display: flex;
+    flex-direction: column;
+    &__network-icons {
+      display: flex;
+      margin-top: 7px;
+      justify-content: center;
+      &__item {
+        background-color: $background;
+        margin-right: 4px;
+      }
+    }
+  }
+}

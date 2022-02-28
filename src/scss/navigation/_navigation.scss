@@ -1,0 +1,36 @@
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+  align-items: center;
+  background-color: $background;
+
+  @include movile {
+    flex-direction: column;
+    box-shadow: none;
+    padding-bottom: 15px;
+  }
+  &__title {
+    font-weight: bold;
+    margin: $navigation-margin;
+    @include movile {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  &__list {
+    display: flex;
+    @include movile {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      margin: $navigation-margin;
+      :hover {
+        color: $paragraph-color;
+      }
+      @include movile {
+        margin: 0;
+      }
+    }
+  }
+}
